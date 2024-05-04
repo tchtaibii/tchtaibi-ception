@@ -9,9 +9,9 @@ spec:
     server: 'https://kubernetes.default.svc'
     namespace: dev
   source: 
-    repoURL: 'https://github.com/tchtaibi/tchtaibi-p3.git'
-    targetRevision: main
-    path: ./conf/
+    repoURL: 'https://github.com/tchtaibii/p3-tchtaibi'
+    targetRevision: master
+    path: ./conf
   syncPolicy:
     syncOptions:
       - CreateNamespace=true

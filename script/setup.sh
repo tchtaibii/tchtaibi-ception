@@ -1,7 +1,4 @@
 #!/bin/bash
-
-
-
 # install k3d in machine
 if which k3d;then
     echo "K3d is already installed"
