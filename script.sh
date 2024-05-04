@@ -1,22 +1,14 @@
-echo "create cluster ..."
 sh script/setup.sh
-echo "apply deployment ..."
-kubectl apply -f conf/deployment.yml
-echo "apply argo deployment ..."
-kubectl apply -f conf/argo.yml
-echo "apply service ..."
-kubectl apply -f conf/service.yml
+sleep 1
+tput setaf 2 ; echo "Change the service of Argo-cd to Node Port." 
+kubectl patch service argocd-server -n argocd --type='json' -p '[{"op":"replace","path":"/spec/type","value":"NodePort"}]' > /dev/null
 sleep 2
-
-kubectl patch service argocd-server -n argocd --type='json' -p '[{"op":"replace","path":"/spec/type","value":"NodePort"}]'
-# sleep 2
-# kubectl port-forward -n argocd svc/argocd-server 9000:443 &
-
-# # Save the process ID of the port-forward command
-# port_forward_pid=$!
-
-# # Wait for termination signal
-# trap "kill $port_forward_pid" EXIT
-
-# # Sleep indefinitely to keep the script running
-# sleep infinity
+tput setaf 2 ; echo "apply deployment ..."
+kubectl apply -f conf/deployment.yml > /dev/null
+tput setaf 2 ; echo "apply argo deployment ..."
+kubectl apply -f conf/argo.yml > /dev/null
+tput setaf 2 ; echo "apply service ..."
+kubectl apply -f conf/service.yml > /dev/null 
+sleep 30
+tput setaf 2 ; echo "Forwarding connection from your local machine to the Argo CD server running in the Kubernetes cluster. "
+kubectl port-forward -n argocd svc/argocd-server 9000:443 > /dev/null
