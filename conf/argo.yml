@@ -9,7 +9,7 @@ spec:
     server: 'https://kubernetes.default.svc'
     namespace: dev
   source: 
-    repoURL: 'https://github.com/tchtaibii/p3-tchtaibi.git'
+    repoURL: 'https://github.com/tchtaibii/tchtaibi-ception.git'
     targetRevision: master
     path: conf/
   syncPolicy:
