@@ -66,5 +66,6 @@ sleep 1
 
 tput setaf 2; echo "Installation of Argo Cd inside arcocd namespace"
 kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml -n argocd > /dev/null
-sleep 4m
-tput setaf 2; echo "Your project is ready"
+
+echo "Waiting for Argo CD to be ready..."
+kubectl wait --for=condition=Available deployment/argocd-server -n argocd --timeout=5m
