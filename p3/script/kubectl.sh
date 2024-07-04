@@ -1,13 +1,14 @@
+sudo chown $(whoami):$(whoami) ~/.kube/config
+chmod 600 ~/.kube/config
 
-KUBECTL_DIR=$HOME/bin
-# Create bin directory if it doesn't exist
-mkdir -p $KUBECTL_DIR
-# Download the latest release of kubectl
-curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
-# Make the kubectl binary executable
-chmod +x ./kubectl
-# Move the binary to your bin directory
-mv ./kubectl $KUBECTL_DIR/kubectl
-# Add kubectl to PATH
-echo 'export PATH=$HOME/bin:$PATH' >> ~/.bashrc
-export PATH=$KUBECTL_DIR:$PATH
+sudo usermod -aG docker $USER
+
+if which brew; then
+    echo "Homebrew is already installed"
+else
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/ubuntu/.bashrc
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+fi
+		
+brew install kubectl

@@ -41,7 +41,7 @@ trap ctrl_c INT
 function ctrl_c() {
     kill $PORT_FORWARD_PID
     echo "$(tput setaf 2)Stopping port forwarding..."
-    bash delete.sh
+    cd script && bash delete.sh
     exit 0
 }
 
