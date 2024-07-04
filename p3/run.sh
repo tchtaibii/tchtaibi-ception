@@ -2,7 +2,7 @@ if [ "$(id -u)" != "0" ]; then
     echo "This script needs to be run with sudo."
     exit 1
 fi
-sh script/setup.sh
+sh sripts/setup.sh
 sleep 1
 sudo chmod -R 777 $HOME/.kube/config
 
@@ -41,7 +41,7 @@ trap ctrl_c INT
 function ctrl_c() {
     kill $PORT_FORWARD_PID
     echo "$(tput setaf 2)Stopping port forwarding..."
-    cd script && bash delete.sh
+    cd sripts && bash delete.sh
     exit 0
 }
 
@@ -50,7 +50,7 @@ sleep 5
 
 echo "$(tput setaf 2)Port forwarding established. Access Argo CD at http://localhost:9000"
 
-# Keep script running until interrupted
+# Keep sripts running until interrupted
 while true; do
     sleep 1
 done

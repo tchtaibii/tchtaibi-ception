@@ -13,7 +13,7 @@ fi
 if which docker; then
 	echo "Docker is already installed."
 else
-	bash ./script/docker.sh
+	bash ./sripts/docker.sh
 	echo "docker has been installed successfully."
 fi
 
@@ -22,7 +22,7 @@ if which kubectl; then
 	echo "kubectl is already installed."
 else
 	echo "kubectl is not installed. Installing kubectl..."
-	bash ./script/kubectl.sh
+	bash ./sripts/kubectl.sh
 	echo "kubectl has been installed successfully."
 fi
 
