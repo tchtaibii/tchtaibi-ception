@@ -36,15 +36,30 @@ fi
 
 sleep 1
 
-tput setaf 2; echo "Creation cluster with K3d"
-k3d cluster create p3 -p "8081:30001@agent:0" --agents 1 > /dev/null
+if ! docker network inspect argo-gitlab >/dev/null 2>&1; then
+    docker network create argo-gitlab
+    echo "Docker network 'argo-gitlab' created."
+else
+    echo "Docker network 'argo-gitlab' already exists."
+fi
+
+tput setaf 2; echo "Checking for existing cluster"
+
+# Check if the K3d cluster exists, create it if it doesn't
+if ! k3d cluster list | grep -q "p3"; then
+    echo "Creating cluster with K3d"
+    k3d cluster create p3 --network argo-gitlab -p "8081:30001@agent:0" --agents 1 > /dev/null
+    echo "K3d cluster 'p3' created."
+else
+    echo "K3d cluster 'p3' already exists."
+fi
 
 sleep 1
 
 tput setaf 2; echo "Creation namespaces"
 kubectl create ns argocd > /dev/null
-kubectl create ns dev > /dev/null
-tput setaf 2; echo "there is two namespaces argocd and dev"
+kubectl create ns gitlab > /dev/null
+tput setaf 2; echo "there is two namespaces argocd and gitlab"
 
 sleep 1
 

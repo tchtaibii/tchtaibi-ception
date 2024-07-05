@@ -1,19 +1,18 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: bonus-gitlab
+  name: myapp
+  namespace: argocd
 spec:
-  project: bonus-project
+  project: default
   source:
-    repoURL: http://HOST_IP:8080/root/iot-gitlab.git
-    targetRevision: master
-    path: /
-    directory:
-      recurse: true
+    repoURL: http://172.19.0.6/root/test.git
+    targetRevision: main
+    path: .
   destination:
     server: https://kubernetes.default.svc
     namespace: gitlab
   syncPolicy:
     automated:
-      prune: false
+      prune: true
       selfHeal: true
