@@ -1,0 +1,180 @@
+{"severity":"INFO","time":"2024-07-08T14:44:23.314Z","message":"Starting cluster with 1 processes"}
+{"severity":"INFO","time":"2024-07-08T14:44:23.330Z","message":"Starting metrics server on port 8082"}
+2024-07-08T14:44:40.620Z pid=872 tid=sn0 INFO: {:message=>"started", :memwd_handler_class=>"Gitlab::Memory::Watchdog::Handlers::SidekiqHandler", :memwd_sleep_time_s=>3, :pid=>872, :worker_id=>"sidekiq_0", :memwd_rss_bytes=>428089344}
+{"severity":"INFO","time":"2024-07-08T14:44:42.804Z","message":"Listening on queues [\"default,1\", \"mailers,1\"]"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.469Z","message":"GitLab reliable fetch activated!"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.469Z","message":"Sidekiq 7.1.6 connecting to Redis with options {:size=\u003e25, :pool_name=\u003e\"internal\", :path=\u003e\"/var/opt/gitlab/redis/redis.socket\", :custom=\u003e{:instrumentation_class=\u003e\"Queues\"}, :url=\u003enil}"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.503Z","message":"Cron Jobs - added job with name: stuck_ci_jobs_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.505Z","message":"Cron Jobs - added job with name: pipeline_schedule_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.508Z","message":"Cron Jobs - added job with name: expire_build_artifacts_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.510Z","message":"Cron Jobs - added job with name: update_locked_unknown_artifacts_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.513Z","message":"Cron Jobs - added job with name: ci_partitioning_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.516Z","message":"Cron Jobs - added job with name: ci_pipelines_expire_artifacts_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.518Z","message":"Cron Jobs - added job with name: ci_schedule_delete_objects_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.520Z","message":"Cron Jobs - added job with name: environments_auto_stop_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.522Z","message":"Cron Jobs - added job with name: environments_auto_delete_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.525Z","message":"Cron Jobs - added job with name: repository_check_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.528Z","message":"Cron Jobs - added job with name: admin_email_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.531Z","message":"Cron Jobs - added job with name: personal_access_tokens_expiring_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.534Z","message":"Cron Jobs - added job with name: personal_access_tokens_expired_notification_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.537Z","message":"Cron Jobs - added job with name: repository_archive_cache_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.539Z","message":"Cron Jobs - added job with name: import_export_project_cleanup_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.542Z","message":"Cron Jobs - added job with name: ci_archive_traces_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.545Z","message":"Cron Jobs - added job with name: members_expiring_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.547Z","message":"Cron Jobs - added job with name: remove_expired_members_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.551Z","message":"Cron Jobs - added job with name: remove_expired_group_links_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.554Z","message":"Cron Jobs - added job with name: remove_unaccepted_member_invites_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.557Z","message":"Cron Jobs - added job with name: prune_old_events_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.560Z","message":"Cron Jobs - added job with name: gitlab_export_prune_project_export_jobs_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.563Z","message":"Cron Jobs - added job with name: trending_projects_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.566Z","message":"Cron Jobs - added job with name: remove_unreferenced_lfs_objects_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.569Z","message":"Cron Jobs - added job with name: bulk_imports_stale_import_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.571Z","message":"Cron Jobs - added job with name: import_stuck_project_import_jobs"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.574Z","message":"Cron Jobs - added job with name: jira_import_stuck_jira_import_jobs"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.576Z","message":"Cron Jobs - added job with name: stuck_export_jobs_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.578Z","message":"Cron Jobs - added job with name: gitlab_service_ping_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.581Z","message":"Cron Jobs - added job with name: stuck_merge_jobs_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.583Z","message":"Cron Jobs - added job with name: pages_domain_verification_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.585Z","message":"Cron Jobs - added job with name: pages_domain_removal_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.588Z","message":"Cron Jobs - added job with name: pages_domain_ssl_renewal_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.590Z","message":"Cron Jobs - added job with name: issue_due_scheduler_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.592Z","message":"Cron Jobs - added job with name: schedule_migrate_external_diffs_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.595Z","message":"Cron Jobs - added job with name: namespaces_prune_aggregation_schedules_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.598Z","message":"Cron Jobs - added job with name: container_expiration_policy_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.600Z","message":"Cron Jobs - added job with name: cleanup_container_registry_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.603Z","message":"Cron Jobs - added job with name: image_ttl_group_policy_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.606Z","message":"Cron Jobs - added job with name: cleanup_dependency_proxy_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.608Z","message":"Cron Jobs - added job with name: cleanup_package_registry_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.611Z","message":"Cron Jobs - added job with name: x509_issuer_crl_check_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.614Z","message":"Cron Jobs - added job with name: users_create_statistics_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.627Z","message":"Cron Jobs - added job with name: authorized_project_update_periodic_recalculate_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.630Z","message":"Cron Jobs - added job with name: update_container_registry_info_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.633Z","message":"Cron Jobs - added job with name: postgres_dynamic_partitions_manager"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.635Z","message":"Cron Jobs - added job with name: postgres_dynamic_partitions_dropper"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.638Z","message":"Cron Jobs - added job with name: ci_platform_metrics_update_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.640Z","message":"Cron Jobs - added job with name: analytics_usage_trends_count_job_trigger_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.643Z","message":"Cron Jobs - added job with name: member_invitation_reminder_emails_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.645Z","message":"Cron Jobs - added job with name: schedule_merge_request_cleanup_refs_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.648Z","message":"Cron Jobs - added job with name: manage_evidence_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.650Z","message":"Cron Jobs - added job with name: publish_release_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.652Z","message":"Cron Jobs - added job with name: user_status_cleanup_batch_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.655Z","message":"Cron Jobs - added job with name: ssh_keys_expired_notification_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.658Z","message":"Cron Jobs - added job with name: ssh_keys_expiring_soon_notification_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.660Z","message":"Cron Jobs - added job with name: users_deactivate_dormant_users_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.663Z","message":"Cron Jobs - added job with name: ci_delete_unit_tests_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.666Z","message":"Cron Jobs - added job with name: batched_background_migrations_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.667Z","message":"Cron Jobs - added job with name: batched_background_migration_worker_ci_database"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.670Z","message":"Cron Jobs - added job with name: issues_reschedule_stuck_issue_rebalances"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.672Z","message":"Cron Jobs - added job with name: projects_schedule_refresh_build_artifacts_size_statistics_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.674Z","message":"Cron Jobs - added job with name: inactive_projects_deletion_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.676Z","message":"Cron Jobs - added job with name: loose_foreign_keys_cleanup_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.679Z","message":"Cron Jobs - added job with name: batched_git_ref_updates_cleanup_scheduler_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.682Z","message":"Cron Jobs - added job with name: ci_runner_versions_reconciliation_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.684Z","message":"Cron Jobs - added job with name: users_migrate_records_to_ghost_user_in_batches_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.686Z","message":"Cron Jobs - added job with name: ci_runners_stale_machines_cleanup_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.688Z","message":"Cron Jobs - added job with name: packages_cleanup_delete_orphaned_dependencies_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.691Z","message":"Cron Jobs - added job with name: cleanup_dangling_debian_package_files_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.693Z","message":"Cron Jobs - added job with name: object_storage_delete_stale_direct_uploads_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.695Z","message":"Cron Jobs - added job with name: service_desk_custom_email_verification_cleanup"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.697Z","message":"Cron Jobs - added job with name: ensure_merge_requests_prepared_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.700Z","message":"Cron Jobs - added job with name: deactivated_pages_deployments_delete_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.702Z","message":"Cron Jobs - added job with name: ci_schedule_unlock_pipelines_in_queue_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.704Z","message":"Cron Jobs - added job with name: ci_catalog_resources_process_sync_events_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.706Z","message":"Cron Jobs - added job with name: namespaces_process_outdated_namespace_descendants_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.708Z","message":"Cron Jobs - added job with name: performance_bar_stats"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.710Z","message":"Cron Jobs - added job with name: ci_catalog_resources_aggregate_last30_day_usage_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.713Z","message":"Cron Jobs - added job with name: analytics_devops_adoption_create_all_snapshots_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.715Z","message":"Cron Jobs - added job with name: analytics_cycle_analytics_incremental_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.717Z","message":"Cron Jobs - added job with name: analytics_cycle_analytics_consistency_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.719Z","message":"Cron Jobs - added job with name: analytics_cycle_analytics_reaggregation_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.721Z","message":"Cron Jobs - added job with name: analytics_value_stream_dashboard_count_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.724Z","message":"Cron Jobs - added job with name: active_user_count_threshold_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.727Z","message":"Cron Jobs - added job with name: adjourned_group_deletion_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.730Z","message":"Cron Jobs - added job with name: adjourned_projects_deletion_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.744Z","message":"Cron Jobs - added job with name: database_monitor_locked_tables_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.746Z","message":"Cron Jobs - added job with name: geo_verification_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.749Z","message":"Cron Jobs - added job with name: geo_sync_timeout_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.753Z","message":"Cron Jobs - added job with name: geo_secondary_usage_data_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.755Z","message":"Cron Jobs - added job with name: geo_registry_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.757Z","message":"Cron Jobs - added job with name: geo_repository_registry_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.759Z","message":"Cron Jobs - added job with name: geo_metrics_update_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.762Z","message":"Cron Jobs - added job with name: geo_prune_event_log_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.763Z","message":"Cron Jobs - added job with name: geo_secondary_registry_consistency_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.766Z","message":"Cron Jobs - added job with name: historical_data_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.768Z","message":"Cron Jobs - added job with name: incident_sla_exceeded_check_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.771Z","message":"Cron Jobs - added job with name: incident_management_persist_oncall_rotation_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.773Z","message":"Cron Jobs - added job with name: incident_management_schedule_escalation_check_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.777Z","message":"Cron Jobs - added job with name: import_software_licenses_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.780Z","message":"Cron Jobs - added job with name: ldap_group_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.783Z","message":"Cron Jobs - added job with name: ldap_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.785Z","message":"Cron Jobs - added job with name: elastic_index_bulk_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.787Z","message":"Cron Jobs - added job with name: elastic_index_embedding_bulk_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.789Z","message":"Cron Jobs - added job with name: elastic_index_initial_bulk_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.792Z","message":"Cron Jobs - added job with name: elastic_cluster_reindexing_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.794Z","message":"Cron Jobs - added job with name: elastic_remove_expired_namespace_subscriptions_from_index_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.797Z","message":"Cron Jobs - added job with name: elastic_migration_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.799Z","message":"Cron Jobs - added job with name: search_zoekt_scheduling_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.801Z","message":"Cron Jobs - added job with name: search_index_curation_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.803Z","message":"Cron Jobs - added job with name: pause_control_resume_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.805Z","message":"Cron Jobs - added job with name: concurrency_limit_resume_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.808Z","message":"Cron Jobs - added job with name: sync_seat_link_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.810Z","message":"Cron Jobs - added job with name: sync_service_token_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.814Z","message":"Cron Jobs - added job with name: llm_embedding_gitlab_documentation_create_embeddings_records_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.817Z","message":"Cron Jobs - added job with name: llm_embedding_gitlab_documentation_cleanup_previous_versions_records_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.820Z","message":"Cron Jobs - added job with name: iterations_update_status_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.822Z","message":"Cron Jobs - added job with name: iterations_generator_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.825Z","message":"Cron Jobs - added job with name: vulnerability_statistics_schedule_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.828Z","message":"Cron Jobs - added job with name: vulnerability_historical_statistics_deletion_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.849Z","message":"Cron Jobs - added job with name: vulnerability_orphaned_remediations_cleanup_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.852Z","message":"Cron Jobs - added job with name: security_create_orchestration_policy_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.855Z","message":"Cron Jobs - added job with name: security_orchestration_policy_rule_schedule_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.858Z","message":"Cron Jobs - added job with name: security_scans_purge_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.861Z","message":"Cron Jobs - added job with name: app_sec_dast_profile_schedule_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.863Z","message":"Cron Jobs - added job with name: ci_namespace_mirrors_consistency_check_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.865Z","message":"Cron Jobs - added job with name: ci_project_mirrors_consistency_check_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.868Z","message":"Cron Jobs - added job with name: arkose_blocked_users_report_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.870Z","message":"Cron Jobs - added job with name: ci_runners_stale_group_runners_prune_worker_cron"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.873Z","message":"Cron Jobs - added job with name: licenses_reset_submit_license_usage_data_banner"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.875Z","message":"Cron Jobs - added job with name: package_metadata_licenses_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.878Z","message":"Cron Jobs - added job with name: compliance_violations_consistency_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.881Z","message":"Cron Jobs - added job with name: users_delete_unconfirmed_users_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.883Z","message":"Cron Jobs - added job with name: users_unconfirmed_secondary_emails_deletion_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.885Z","message":"Cron Jobs - added job with name: package_metadata_advisories_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.888Z","message":"Cron Jobs - added job with name: okr_checkin_reminder_emails"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.891Z","message":"Cron Jobs - added job with name: timeout_pending_status_check_responses_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.894Z","message":"Cron Jobs - added job with name: click_house_ci_finished_builds_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.896Z","message":"Cron Jobs - added job with name: click_house_events_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.899Z","message":"Cron Jobs - added job with name: click_house_event_authors_consistency_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.901Z","message":"Cron Jobs - added job with name: click_house_event_namespace_paths_consistency_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.904Z","message":"Cron Jobs - added job with name: click_house_rebuild_materialized_view_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.906Z","message":"Cron Jobs - added job with name: click_house_dump_all_write_buffers_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.909Z","message":"Cron Jobs - added job with name: gitlab_subscriptions_add_on_purchases_schedule_bulk_refresh_user_assignments_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.912Z","message":"Cron Jobs - added job with name: gitlab_subscriptions_add_on_purchases_cleanup_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.916Z","message":"Cron Jobs - added job with name: update_all_mirrors_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.920Z","message":"Cron Jobs - added job with name: geo_sidekiq_cron_config_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.933Z","message":"Cron Jobs - added job with name: geo_metrics_update_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.934Z","message":"Cron Jobs - added job with name: geo_verification_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.936Z","message":"Cron Jobs - added job with name: geo_prune_event_log_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.937Z","message":"Cron Jobs - added job with name: geo_registry_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.938Z","message":"Cron Jobs - added job with name: geo_repository_registry_sync_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.939Z","message":"Cron Jobs - added job with name: geo_secondary_registry_consistency_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.941Z","message":"Cron Jobs - added job with name: geo_secondary_usage_data_cron_worker"}
+{"severity":"INFO","time":"2024-07-08T14:44:45.942Z","message":"Cron Jobs - added job with name: geo_sync_timeout_cron_worker"}
+WARNING: Active Record does not support composite primary key.
+
+security_findings has composite primary key. Composite primary key is ignored.
+{"severity":"INFO","time":"2024-07-08T14:45:14.218Z","message":"Booted Rails 7.0.8.4 application in production environment"}
+{"severity":"INFO","time":"2024-07-08T14:45:14.218Z","message":"Running in ruby 3.1.5p253 (2024-04-023 revision 1945f8dc0e) [x86_64-linux]"}
+{"severity":"INFO","time":"2024-07-08T14:45:14.218Z","message":"See LICENSE and the LGPL-3.0 for licensing details."}
+{"severity":"INFO","time":"2024-07-08T14:45:14.218Z","message":"Upgrade to Sidekiq Pro for more features and support: https://sidekiq.org"}
+{"severity":"INFO","time":"2024-07-08T14:45:14.220Z","message":"Sidekiq 7.1.6 connecting to Redis with options {:size=\u003e25, :pool_name=\u003e\"default\", :path=\u003e\"/var/opt/gitlab/redis/redis.socket\", :custom=\u003e{:instrumentation_class=\u003e\"Queues\"}, :url=\u003enil}"}
+[2024-07-08 14:45:14] INFO  WEBrick 1.8.1
+[2024-07-08 14:45:14] INFO  ruby 3.1.5 (2024-04-023) [x86_64-linux]
+[2024-07-08 14:45:14] INFO  WEBrick::HTTPServer#start: pid=872 port=8092
+{"severity":"INFO","time":"2024-07-08T14:45:14.267Z","message":"Cleaning working queues"}
+{"severity":"INFO","time":"2024-07-08T14:45:14.276Z","retry":25,"queue":"default","version":0,"store":null,"args":["1"],"class":"Groups::EnterpriseUsers::AssociateWorker","jid":"6110533ccd5f659c77cee40b","created_at":"2024-07-08T14:43:56.645Z","trace_propagation_headers":{"sentry-trace":"5cbb47bc57ef45069e079b60799673a9-19831cefd7ff44d1","baggage":"sentry-trace_id=5cbb47bc57ef45069e079b60799673a9,sentry-environment=,sentry-release=d0ac56e0be2"},"meta.feature_category":"user_management","correlation_id":"dcb38b3a1c84e0ae61a31d1973186ef3","worker_data_consistency":"always","idempotency_key":"resque:gitlab:duplicate:default:5cdb86e610bce8e5e07a644915dff9c6dfe173b0f8fb29bf0f734c76aefcd732","size_limiter":"validated","enqueued_at":"2024-07-08T14:43:56.649Z","job_size_bytes":3,"pid":872,"message":"Groups::EnterpriseUsers::AssociateWorker JID-6110533ccd5f659c77cee40b: start","job_status":"start","scheduling_latency_s":77.625783}
+{"severity":"INFO","time":"2024-07-08T14:45:14.279Z","retry":25,"queue":"default","version":0,"store":null,"args":[],"class":"Namespaces::ProcessSyncEventsWorker","jid":"a1cda01b967840d8343319a2","created_at":"2024-07-08T14:43:56.653Z","trace_propagation_headers":{"sentry-trace":"5cbb47bc57ef45069e079b60799673a9-19831cefd7ff44d1","baggage":"sentry-trace_id=5cbb47bc57ef45069e079b60799673a9,sentry-environment=,sentry-release=d0ac56e0be2"},"meta.feature_category":"cell","correlation_id":"d345fc5edf7729db0d104bfb7d5fff40","worker_data_consistency":"always","idempotency_key":"resque:gitlab:duplicate:default:99b01e5f7dc2a9b47ce31029252a21c1a7e02ef97b2a00a70d65582147f34ddb","size_limiter":"validated","enqueued_at":"2024-07-08T14:43:56.657Z","job_size_bytes":2,"pid":872,"message":"Namespaces::ProcessSyncEventsWorker JID-a1cda01b967840d8343319a2: start","job_status":"start","scheduling_latency_s":77.62235}
+{"severity":"INFO","time":"2024-07-08T14:45:14.557Z","retry":25,"queue":"default","version":0,"store":null,"args":["1"],"class":"Groups::EnterpriseUsers::AssociateWorker","jid":"6110533ccd5f659c77cee40b","created_at":"2024-07-08T14:43:56.645Z","trace_propagation_headers":{"sentry-trace":"5cbb47bc57ef45069e079b60799673a9-19831cefd7ff44d1","baggage":"sentry-trace_id=5cbb47bc57ef45069e079b60799673a9,sentry-environment=,sentry-release=d0ac56e0be2"},"meta.feature_category":"user_management","correlation_id":"dcb38b3a1c84e0ae61a31d1973186ef3","worker_data_consistency":"always","idempotency_key":"resque:gitlab:duplicate:default:5cdb86e610bce8e5e07a644915dff9c6dfe173b0f8fb29bf0f734c76aefcd732","size_limiter":"validated","enqueued_at":"2024-07-08T14:43:56.649Z","job_size_bytes":3,"pid":872,"message":"Groups::EnterpriseUsers::AssociateWorker JID-6110533ccd5f659c77cee40b: done: 0.282303 sec","job_status":"done","scheduling_latency_s":77.625783,"redis_calls":15,"redis_duration_s":0.01265,"redis_read_bytes":15,"redis_write_bytes":2375,"redis_feature_flag_calls":12,"redis_feature_flag_duration_s":0.009323,"redis_feature_flag_read_bytes":12,"redis_feature_flag_write_bytes":2116,"redis_queues_metadata_calls":2,"redis_queues_metadata_duration_s":0.002026,"redis_queues_metadata_read_bytes":2,"redis_queues_metadata_write_bytes":172,"redis_shared_state_calls":1,"redis_shared_state_duration_s":0.001301,"redis_shared_state_read_bytes":1,"redis_shared_state_write_bytes":87,"db_count":8,"db_write_count":0,"db_cached_count":0,"db_txn_count":0,"db_replica_txn_count":0,"db_primary_txn_count":0,"db_main_txn_count":0,"db_ci_txn_count":0,"db_main_replica_txn_count":0,"db_ci_replica_txn_count":0,"db_replica_count":0,"db_primary_count":8,"db_main_count":8,"db_ci_count":0,"db_main_replica_count":0,"db_ci_replica_count":0,"db_replica_cached_count":0,"db_primary_cached_count":0,"db_main_cached_count":0,"db_ci_cached_count":0,"db_main_replica_cached_count":0,"db_ci_replica_cached_count":0,"db_replica_wal_count":0,"db_primary_wal_count":0,"db_main_wal_count":0,"db_ci_wal_count":0,"db_main_replica_wal_count":0,"db_ci_replica_wal_count":0,"db_replica_wal_cached_count":0,"db_primary_wal_cached_count":0,"db_main_wal_cached_count":0,"db_ci_wal_cached_count":0,"db_main_replica_wal_cached_count":0,"db_ci_replica_wal_cached_count":0,"db_replica_txn_max_duration_s":0.0,"db_primary_txn_max_duration_s":0.0,"db_main_txn_max_duration_s":0.0,"db_ci_txn_max_duration_s":0.0,"db_main_replica_txn_max_duration_s":0.0,"db_ci_replica_txn_max_duration_s":0.0,"db_replica_txn_duration_s":0.0,"db_primary_txn_duration_s":0.0,"db_main_txn_duration_s":0.0,"db_ci_txn_duration_s":0.0,"db_main_replica_txn_duration_s":0.0,"db_ci_replica_txn_duration_s":0.0,"db_replica_duration_s":0.0,"db_primary_duration_s":0.051,"db_main_duration_s":0.051,"db_ci_duration_s":0.0,"db_main_replica_duration_s":0.0,"db_ci_replica_duration_s":0.0,"cpu_s":0.064632,"mem_objects":48927,"mem_bytes":8530816,"mem_mallocs":41175,"mem_total_bytes":10487896,"worker_id":"sidekiq_0","rate_limiting_gates":[],"duration_s":0.282303,"completed_at":"2024-07-08T14:45:14.557Z","load_balancing_strategy":"primary","db_duration_s":0.151548,"urgency":"low","target_duration_s":300,"target_scheduling_latency_s":60}
+{"severity":"INFO","time":"2024-07-08T14:45:14.806Z","retry":25,"queue":"default","version":0,"store":null,"args":[],"class":"Namespaces::ProcessSyncEventsWorker","jid":"a1cda01b967840d8343319a2","created_at":"2024-07-08T14:43:56.653Z","trace_propagation_headers":{"sentry-trace":"5cbb47bc57ef45069e079b60799673a9-19831cefd7ff44d1","baggage":"sentry-trace_id=5cbb47bc57ef45069e079b60799673a9,sentry-environment=,sentry-release=d0ac56e0be2"},"meta.feature_category":"cell","correlation_id":"d345fc5edf7729db0d104bfb7d5fff40","worker_data_consistency":"always","idempotency_key":"resque:gitlab:duplicate:default:99b01e5f7dc2a9b47ce31029252a21c1a7e02ef97b2a00a70d65582147f34ddb","size_limiter":"validated","enqueued_at":"2024-07-08T14:43:56.657Z","job_size_bytes":2,"pid":872,"message":"Namespaces::ProcessSyncEventsWorker JID-a1cda01b967840d8343319a2: done: 0.526845 sec","job_status":"done","scheduling_latency_s":77.62235,"redis_calls":16,"redis_duration_s":0.009868,"redis_read_bytes":15,"redis_write_bytes":2466,"redis_feature_flag_calls":10,"redis_feature_flag_duration_s":0.007596,"redis_feature_flag_read_bytes":10,"redis_feature_flag_write_bytes":1746,"redis_queues_metadata_calls":3,"redis_queues_metadata_duration_s":0.000582,"redis_queues_metadata_read_bytes":2,"redis_queues_metadata_write_bytes":295,"redis_shared_state_calls":3,"redis_shared_state_duration_s":0.00169,"redis_shared_state_read_bytes":3,"redis_shared_state_write_bytes":425,"db_count":11,"db_write_count":2,"db_cached_count":0,"db_txn_count":0,"db_replica_txn_count":0,"db_primary_txn_count":0,"db_main_txn_count":0,"db_ci_txn_count":0,"db_main_replica_txn_count":0,"db_ci_replica_txn_count":0,"db_replica_count":0,"db_primary_count":11,"db_main_count":10,"db_ci_count":1,"db_main_replica_count":0,"db_ci_replica_count":0,"db_replica_cached_count":0,"db_primary_cached_count":0,"db_main_cached_count":0,"db_ci_cached_count":0,"db_main_replica_cached_count":0,"db_ci_replica_cached_count":0,"db_replica_wal_count":0,"db_primary_wal_count":0,"db_main_wal_count":0,"db_ci_wal_count":0,"db_main_replica_wal_count":0,"db_ci_replica_wal_count":0,"db_replica_wal_cached_count":0,"db_primary_wal_cached_count":0,"db_main_wal_cached_count":0,"db_ci_wal_cached_count":0,"db_main_replica_wal_cached_count":0,"db_ci_replica_wal_cached_count":0,"db_replica_txn_max_duration_s":0.0,"db_primary_txn_max_duration_s":0.0,"db_main_txn_max_duration_s":0.0,"db_ci_txn_max_duration_s":0.0,"db_main_replica_txn_max_duration_s":0.0,"db_ci_replica_txn_max_duration_s":0.0,"db_replica_txn_duration_s":0.0,"db_primary_txn_duration_s":0.0,"db_main_txn_duration_s":0.0,"db_ci_txn_duration_s":0.0,"db_main_replica_txn_duration_s":0.0,"db_ci_replica_txn_duration_s":0.0,"db_replica_duration_s":0.0,"db_primary_duration_s":0.091,"db_main_duration_s":0.075,"db_ci_duration_s":0.016,"db_main_replica_duration_s":0.0,"db_ci_replica_duration_s":0.0,"cpu_s":0.172623,"mem_objects":16174,"mem_bytes":3653656,"mem_mallocs":36352,"mem_total_bytes":4300616,"worker_id":"sidekiq_0","rate_limiting_gates":[],"exclusive_lock_requested_count":1,"exclusive_lock_wait_duration_s":0,"exclusive_lock_hold_duration_s":0.324608167,"extra.namespaces_process_sync_events_worker.estimated_total_events":1,"extra.namespaces_process_sync_events_worker.consumable_events":1,"extra.namespaces_process_sync_events_worker.processed_events":1,"duration_s":0.526845,"completed_at":"2024-07-08T14:45:14.806Z","load_balancing_strategy":"primary","db_duration_s":0.259536,"urgency":"high","target_duration_s":10,"target_scheduling_latency_s":10}
+{"severity":"INFO","time":"2024-07-08T14:45:27.861Z","retry":0,"queue":"default","version":0,"store":null,"queue_namespace":"cronjob","args":[],"class":"LooseForeignKeys::CleanupWorker","jid":"c3694b4df1ba5f3db6536f17","created_at":"2024-07-08T14:45:27.805Z","trace_propagation_headers":{"sentry-trace":"7016db113f8c4eb9a4eb6b7864a0d135-b1a564535b9b4e65","baggage":"sentry-trace_id=7016db113f8c4eb9a4eb6b7864a0d135,sentry-environment=,sentry-release=d0ac56e0be2"},"meta.caller_id":"Cronjob","correlation_id":"f2dbbed9941bbfd44974926454f92d55","meta.root_caller_id":"Cronjob","meta.feature_category":"cell","worker_data_consistency":"always","idempotency_key":"resque:gitlab:duplicate:default:2180384c8554b410820afa81ad3479301139c7627524f882c6bca44488742df9","size_limiter":"validated","enqueued_at":"2024-07-08T14:45:27.849Z","job_size_bytes":2,"pid":872,"message":"LooseForeignKeys::CleanupWorker JID-c3694b4df1ba5f3db6536f17: start","job_status":"start","scheduling_latency_s":0.011606}
+{"severity":"INFO","time":"2024-07-08T14:45:27.898Z","retry":0,"queue":"default","version":0,"store":null,"queue_namespace":"cronjob","args":[],"class":"ElasticIndexBulkCronWorker","jid":"5b2daf3025723f4ea34efa00","created_at":"2024-07-08T14:45:27.887Z","trace_propagation_headers":{"sentry-trace":"7016db113f8c4eb9a4eb6b7864a0d135-b1a564535b9b4e65","baggage":"sentry-trace_id=7016db113f8c4eb9a4eb6b7864a0d135,sentry-environment=,sentry-release=d0ac56e0be2"},"meta.caller_id":"Cronjob","correlation_id":"2ea88e10d4230a5f5c79e51ff54042a4","meta.root_caller_id":"Cronjob","meta.feature_category":"global_search","worker_data_consistency":"sticky","wal_locations":{},"wal_location_source":"primary","idempotency_key":"resque:gitlab:duplicate:default:f252f68f3cc1cae1877f9a0e1f5b889102a68a9e335a3a5a9e683c7bdf0507f5","size_limiter":"validated","enqueued_at":"2024-07-08T14:45:27.896Z","job_size_bytes":2,"pid":872,"message":"ElasticIndexBulkCronWorker JID-5b2daf3025723f4ea34efa00: start","job_status":"start","scheduling_latency_s":0.00285}
